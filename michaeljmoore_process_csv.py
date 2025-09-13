@@ -32,28 +32,28 @@ PROCESSED_DIR: str = "processed"
 
 # TODO: Add or replace this with a function that reads and processes your CSV file
 
-def analyze_ladder_score(file_path: pathlib.Path) -> dict:
-    """Analyze the Ladder score column to calculate min, max, mean, and stdev."""
+def analyze_running_time(file_path: pathlib.Path) -> dict:
+    """Analyze the Running Time column to calculate min, max, mean, and stdev."""
     try:
         # initialize an empty list to store the scores
-        score_list = []
-        with file_path.open('r') as file:
+        run_list = []
+        with file_path.open('r', encoding='utf-8') as file:
             # csv.DictReader() methods to read into a DictReader so we can access named columns in the csv file
             dict_reader = csv.DictReader(file)  
             for row in dict_reader:
                 try:
-                    score = float(row["Ladder score"])  # Extract and convert to float
+                    time = float(row["Running time"])  # Extract and convert to float
                     # append the score to the list
-                    score_list.append(score)
+                    run_list.append(time)
                 except ValueError as e:
                     logger.warning(f"Skipping invalid row: {row} ({e})")
         
         # Calculate statistics
         stats = {
-            "min": min(score_list),
-            "max": max(score_list),
-            "mean": statistics.mean(score_list),
-            "stdev": statistics.stdev(score_list) if len(score_list) > 1 else 0,
+            "min": min(run_list),
+            "max": max(run_list),
+            "mean": statistics.mean(run_list),
+            "stdev": statistics.stdev(run_list) if len(run_list) > 1 else 0,
         }
         return stats
     except Exception as e:
@@ -61,17 +61,15 @@ def analyze_ladder_score(file_path: pathlib.Path) -> dict:
         return {}
 
 def process_csv_file():
-    """Read a CSV file, analyze Ladder score, and save the results."""
+    """Read a CSV file, analyze Running Time, and save the results."""
     
-    # TODO: Replace with path to your CSV data file
-    input_file = pathlib.Path(FETCHED_DATA_DIR, "2020_happiness.csv")
+    input_file = pathlib.Path(FETCHED_DATA_DIR, "DisneyMovies_cleaned_data.csv")
     
-    # TODO: Replace with path to your CSV processed file
-    output_file = pathlib.Path(PROCESSED_DIR, "happiness_ladder_score_stats.txt")
+    output_file = pathlib.Path(PROCESSED_DIR, "disney_running_time_stats.txt")
     
     # TODO: Call your new function to process YOUR CSV file
     # TODO: Create a new local variable to store the result of the function call
-    stats = analyze_ladder_score(input_file)
+    stats = analyze_running_time(input_file)
 
     # Create the output directory if it doesn't exist
     output_file.parent.mkdir(parents=True, exist_ok=True)
@@ -79,9 +77,8 @@ def process_csv_file():
     # Open the output file in write mode and write the results
     with output_file.open('w') as file:
 
-        # TODO: Update the output to describe your results
-        file.write("Ladder Score Statistics:\n")
-        file.write(f"Minimum: {stats['min']:.2f}\n")
+        file.write("Running Time Statistics:\n") #
+        file.write(f"Minimum: {stats['min']:.2f}\n") 
         file.write(f"Maximum: {stats['max']:.2f}\n")
         file.write(f"Mean: {stats['mean']:.2f}\n")
         file.write(f"Standard Deviation: {stats['stdev']:.2f}\n")
