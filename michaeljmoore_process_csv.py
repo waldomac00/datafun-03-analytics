@@ -1,5 +1,18 @@
 """
-Process a CSV file on 2020 Happiness ratings by country to analyze the `Ladder score` column and save statistics.
+File: michaeljmoore_process_csv.py
+
+Project: DataFun-03-Analytics
+
+Description:
+    Process a CSV file (DisneyMovies_cleaned_data.csv) to analyze the 'Running time' column
+    and save statistics (min, max, mean, standard deviation) to a text file in the 'processed' folder.
+
+Usage:
+    - Ensure utils_logger.py is present in the same directory.
+    - Run this script directly or import its process_csv_file() function.
+
+Author: Michael J Moore
+Date: 2025-09-
 """
 
 #####################################
@@ -30,7 +43,6 @@ PROCESSED_DIR: str = "processed"
 # Define Functions
 #####################################
 
-# TODO: Add or replace this with a function that reads and processes your CSV file
 
 def analyze_running_time(file_path: pathlib.Path) -> dict:
     """Analyze the Running Time column to calculate min, max, mean, and stdev."""
@@ -67,8 +79,7 @@ def process_csv_file():
     
     output_file = pathlib.Path(PROCESSED_DIR, "disney_running_time_stats.txt")
     
-    # TODO: Call your new function to process YOUR CSV file
-    # TODO: Create a new local variable to store the result of the function call
+    # Call the function to analyze the Running Time column
     stats = analyze_running_time(input_file)
 
     # Create the output directory if it doesn't exist

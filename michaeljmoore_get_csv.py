@@ -1,9 +1,19 @@
 """
-This example file fetches a CSV file from the web 
-and saves it to a local file named 2020_happiness.csv in a folder named example_data.
+File: michaeljmoore_get_csv.py
 
-For best results, add the provided utils_logger.py file 
-to the same folder as this file.
+Project: DataFun-03-Analytics
+
+Description:
+    This script fetches a CSV file from the web and saves it to a local file named
+    DisneyMovies_cleaned_data.csv in a folder named 'data'. It demonstrates how to
+    automate data acquisition for analytics projects.
+
+Usage:
+    - Ensure utils_logger.py is present in the same directory.
+    - Run this script directly or import its main() function.
+
+Author: Michael J Moore
+Date: 2025-09-12
 """
 
 #####################################

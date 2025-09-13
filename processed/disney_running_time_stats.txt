@@ -1,5 +1,0 @@
-Running Time Statistics:
-Minimum: 40.00
-Maximum: 168.00
-Mean: 97.54
-Standard Deviation: 18.91

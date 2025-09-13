@@ -1,9 +1,19 @@
 """
-This example file fetches a text file of Romeo and Juliet from the web 
-and saves it to a local file named romeo.txt in a folder named example_data.
+File: michaeljmoore_get_text.py
 
-Please save a copy of the provided utils_logger.py file 
-in the same folder as this file.
+Project: DataFun-03-Analytics
+
+Description:
+    This script fetches a text file (e.g., Romeo and Juliet or other text) from the web
+    and saves it to a local file in a folder named 'data'. It demonstrates how to automate
+    text data acquisition for analytics projects.
+
+Usage:
+    - Ensure utils_logger.py is present in the same directory.
+    - Run this script directly or import its main() function.
+
+Author: Michael J Moore
+Date: 2025-09-
 """
 
 #####################################
@@ -27,7 +37,7 @@ from utils_logger import logger
 # Declare Global Variables
 #####################################
 
-FETCHED_DATA_DIR = "example_data"
+FETCHED_DATA_DIR = "data"
 
 #####################################
 # Define Functions
@@ -93,9 +103,9 @@ def main():
     """
     Main function to demonstrate fetching text data.
     """
-    txt_url = 'https://raw.githubusercontent.com/denisecase/datafun-03-analytics/main/hosted/romeo.txt'
+    txt_url = 'https://wonkadotcom.tripod.com/wonkascript.txt'
     logger.info("Starting text fetch demonstration...")
-    fetch_txt_file(FETCHED_DATA_DIR, "romeo.txt", txt_url)
+    fetch_txt_file(FETCHED_DATA_DIR, "wonkascript.txt", txt_url)
 
 #####################################
 # Conditional Execution

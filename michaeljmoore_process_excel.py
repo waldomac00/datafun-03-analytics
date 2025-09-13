@@ -1,6 +1,18 @@
 """
-Process an Excel file to count occurrences of a specific word in a column.
+File: michaeljmoore_process_excel.py
 
+Project: DataFun-03-Analytics
+
+Description:
+    Process an Excel file (Lottery_Powerball_Winning_Numbers__Beginning_2010.xlsx) to count occurrences
+    of a specific word in a given column and save the result to a text file in the 'processed' folder.
+
+Usage:
+    - Ensure utils_logger.py is present in the same directory.
+    - Run this script directly or import its process_excel_file() function.
+
+Author: Michael J Moore
+Date: 2025-09-12
 """
 
 #####################################

@@ -1,5 +1,18 @@
 """
-Process a JSON file and output some statistics to a text file.
+File: michaeljmoore_process_json.py
+
+Project: DataFun-03-Analytics
+
+Description:
+    Process a JSON file (zodiac.json) to count the number of famous people for each zodiac sign
+    and save the results to a text file in the 'processed' folder.
+
+Usage:
+    - Ensure utils_logger.py is present in the same directory.
+    - Run this script directly or import its process_json_file() function.
+
+Author: Michael J Moore
+Date: 2025-09
 """
 
 #####################################

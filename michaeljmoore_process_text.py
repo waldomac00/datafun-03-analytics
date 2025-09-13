@@ -1,4 +1,21 @@
 """
+File: michaeljmoore_process_text.py
+
+Project: DataFun-03-Analytics
+
+Description:
+    Process a text file to count occurrences of a specific word (e.g., "Wonka") and save the result
+    to a text file in the 'processed' folder.
+
+Usage:
+    - Ensure utils_logger.py is present in the same directory.
+    - Run this script directly or import its process_text_file() function.
+
+Author: Michael J Moore
+Date: 2025-09-
+"""
+
+"""
 Process a text file to count occurrences of the word "Romeo" and save the result.
 """
 
@@ -21,8 +38,8 @@ from utils_logger import logger
 #####################################
 
 # TODO: Replace with the names of your folders
-FETCHED_DATA_DIR: str = "example_data"
-PROCESSED_DIR: str = "example_processed"
+FETCHED_DATA_DIR: str = "data"
+PROCESSED_DIR: str = "processed"
 
 #####################################
 # Define Functions
@@ -39,16 +56,16 @@ def count_word_occurrences(file_path: pathlib.Path, word: str) -> int:
         return 1
 
 def process_text_file():
-    """Read a text file, count occurrences of 'Romeo', and save the result."""
+    """Read a text file, count occurrences of 'Wonka', and save the result."""
  
     # TODO: Replace with path to your text data file
-    input_file = pathlib.Path(FETCHED_DATA_DIR, "romeo.txt")
+    input_file = pathlib.Path(FETCHED_DATA_DIR, "wonkascript.txt")
 
     # TODO: Replace with path to your text processed file
-    output_file = pathlib.Path(PROCESSED_DIR, "text_romeo_word_count.txt")
+    output_file = pathlib.Path(PROCESSED_DIR, "text_wonka_word_count.txt")
 
     # TODO: Replace with the word you want to count from your text file
-    word_to_count: str = "Romeo"
+    word_to_count: str = "Wonka"
 
     # TODO: Make any necessary changes to the logic
     word_count: int = count_word_occurrences(input_file, word_to_count)

@@ -1,9 +1,19 @@
 """
-This example file fetches JSON data of astronauts currently in space 
-from the web and saves it to a local file named example_data/astronauts.json.
+File: michaeljmoore_get_json.py
 
-TODO: Save a copy of the provided utils_logger.py file 
-in the same folder as this file.
+Project: DataFun-03-Analytics
+
+Description:
+    This script fetches JSON data (zodiac signs) from the web and saves it to a local file named
+    zodiac.json in a folder named 'data'. It demonstrates how to automate JSON data acquisition
+    for analytics projects.
+
+Usage:
+    - Ensure utils_logger.py is present in the same directory.
+    - Run this script directly or import its main() function.
+
+Author: Michael J Moore
+Date: 2025-09-12
 """
 
 #####################################

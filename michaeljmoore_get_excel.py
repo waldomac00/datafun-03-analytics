@@ -1,9 +1,19 @@
 """
-This example file fetches an Excel file from the web 
-and saves it to a local file named feedback.xlsx in a folder named example_data.
+File: michaeljmoore_get_excel.py
 
-Please save a copy of the provided utils_logger.py file 
-in the same folder as this file.
+Project: DataFun-03-Analytics
+
+Description:
+    This script fetches an Excel file from the web and saves it to a local file named
+    Lottery_Powerball_Winning_Numbers__Beginning_2010.xlsx in a folder named 'data'.
+    It demonstrates how to automate Excel data acquisition for analytics projects.
+
+Usage:
+    - Ensure utils_logger.py is present in the same directory.
+    - Run this script directly or import its main() function.
+
+Author: Michael J Moore
+Date: 2025-09-12
 """
 
 #####################################
