@@ -1,0 +1,14 @@
+2025-09-03 20:44:54.616 | INFO     | __main__:<module>:41 - Logging to file: logs\project_log.log
+2025-09-03 20:44:54.616 | INFO     | __main__:main:63 - STARTING utils_logger.py
+2025-09-03 20:44:54.617 | INFO     | __main__:log_example:54 - This is an example info message.
+2025-09-03 20:44:54.617 | WARNING  | __main__:log_example:55 - This is an example warning message.
+2025-09-03 20:44:54.618 | ERROR    | __main__:log_example:56 - This is an example error message.
+2025-09-03 20:44:54.619 | INFO     | __main__:main:68 - View the log output at logs\project_log.log
+2025-09-03 20:44:54.619 | INFO     | __main__:main:69 - EXITING utils_logger.py.
+2025-09-03 20:45:35.536 | INFO     | __main__:<module>:41 - Logging to file: logs\project_log.log
+2025-09-03 20:45:35.537 | INFO     | __main__:main:63 - STARTING utils_logger.py
+2025-09-03 20:45:35.537 | INFO     | __main__:log_example:54 - This is an example info message.
+2025-09-03 20:45:35.537 | WARNING  | __main__:log_example:55 - This is an example warning message.
+2025-09-03 20:45:35.537 | ERROR    | __main__:log_example:56 - This is an example error message.
+2025-09-03 20:45:35.538 | INFO     | __main__:main:68 - View the log output at logs\project_log.log
+2025-09-03 20:45:35.538 | INFO     | __main__:main:69 - EXITING utils_logger.py.
