@@ -48,15 +48,15 @@ py example_process_excel.py
 py example_process_json.py
 py example_process_text.py
 
-py yourname_get_csv.py
-py yourname_get_excel.py
-py yourname_get_json.py
-py yourname_get_text.py
+py michaeljmoore_get_csv.py
+py michaeljmoore_get_excel.py
+py michaeljmoore_get_json.py
+py michaeljmoore_get_text.py
 
-py yourname_process_csv.py
-py yourname_process_excel.py
-py yourname_process_json.py
-py yourname_process_text.py
+py michaeljmoore_process_csv.py
+py michaeljmoore_process_excel.py
+py michaeljmoore_process_json.py
+py michaeljmoore_process_text.py
 
 ```
 
@@ -72,10 +72,10 @@ git push -u origin main
 1. Find data files on the web for each type (CSV, Excel, JSON, and text).  
 2. Create your own Python script to fetch each type of data and save it in a folder named **data**.
 3. Name your scripts:
-   1. yourname_get_csv.py
-   2. yourname_get_excel.py
-   3. yourname_get_json.py
-   4. yourname_get_text.py
+   1. michaeljmoore_get_csv.py
+   2. michaeljmoore_get_excel.py
+   3. michaeljmoore_get_json.py
+   4. michaeljmoore_get_text.py
 4. Implement your data-processing logic in small steps:
    - Fetch data for one file type.
    - Test, verify, and Git add-commit-push.
@@ -84,10 +84,10 @@ git push -u origin main
 1. Determine a simple metric from each of your data files.  
 2. Create your own Python script to read the data, process it, and save it in a folder named **data_processed**.
 3. Name your scripts:
-   1. yourname_process_csv.py
-   2. yourname_process_excel.py
-   3. yourname_process_json.py
-   4. yourname_process_text.py
+   1. michaeljmoore_process_csv.py
+   2. michaeljmoore_process_excel.py
+   3. michaeljmoore_process_json.py
+   4. michaeljmoore_process_text.py
 4. Work incrementally, using git add-commit-push after each bit of progress. 
 
 ## Update README.md to Describe Your Work
