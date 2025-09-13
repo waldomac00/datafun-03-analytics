@@ -1,0 +1,1 @@
+Occurrences of '12' in column B: 211
