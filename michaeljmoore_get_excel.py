@@ -93,9 +93,9 @@ def main():
     """
     Main function to demonstrate fetching Excel data.
     """
-    excel_url = 'https://civilrightsdata.ed.gov/assets/downloads/2017-2018/School-Climate/Harassment-or-Bullying/Harassment-Bullying-on-basis-of-disability_discplined.xlsx'
+    excel_url = 'https://github.com/waldomac00/hosted_data/raw/refs/heads/main/Lottery_Powerball_Winning_Numbers__Beginning_2010.xlsx'
     logger.info("Starting Excel fetch demonstration...")
-    fetch_excel_file(FETCHED_DATA_DIR, "Harassment-Bullying-on-basis-of-disability_discplined.xlsx", excel_url)
+    fetch_excel_file(FETCHED_DATA_DIR, "Lottery_Powerball_Winning_Numbers__Beginning_2010.xlsx", excel_url)
 
 #####################################
 # Conditional Execution
