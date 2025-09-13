@@ -1,0 +1,184 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>OTT, Video Streaming Platforms - Revenue and Users | Kaggle</title>
+  <meta charset="utf-8" />
+    <meta name="robots" content="index, follow" />
+  <meta name="description" content="OTT &#x2B; Video Streaming Platforms - Revenue and User Stats 2011-21" />
+    <meta name="keywords" content="arts and entertainment,computer science,finance,investing,people and society,marketing" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
+  <meta name="theme-color" content="#008ABC" />
+  <script nonce="btlI6tnb&#x2B;pgwSSCJzXruoA==" type="text/javascript">
+    window["pageRequestStartTime"] = 1757727313092;
+    window["pageRequestEndTime"] = 1757727313202;
+    window["initialPageLoadStartTime"] = new Date().getTime();
+  </script>
+  <script nonce="btlI6tnb&#x2B;pgwSSCJzXruoA==" id="gsi-client" src="https://accounts.google.com/gsi/client" async defer></script>
+  <script nonce="btlI6tnb&#x2B;pgwSSCJzXruoA==">window.KAGGLE_JUPYTERLAB_PATH = "/static/assets/jupyterlab-v4/jupyterlab-index-7fe6dd75e46cf0a5504e.html";</script>
+  <link rel="preconnect" href="https://www.google-analytics.com" crossorigin="anonymous" /><link rel="preconnect" href="https://stats.g.doubleclick.net" /><link rel="preconnect" href="https://storage.googleapis.com" /><link rel="preconnect" href="https://apis.google.com" />
+    <link href="/static/images/favicon.ico" rel="shortcut icon" type="image/x-icon" id="dynamic-favicon" />
+  <link rel="manifest" href="/static/json/manifest.json" crossorigin="use-credentials">
+
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,400i,500,500i,600,600i,700,700i&display=swap"
+    rel="preload" as="style" />
+  <link href="https://fonts.googleapis.com/css2?family=Google+Symbols:FILL@0..1&display=block"
+    rel="preload" as="style" />
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,400i,500,500i,600,600i,700,700i&display=swap"
+    rel="stylesheet" media="print" id="async-google-font-1" />
+  <link href="https://fonts.googleapis.com/css2?family=Google+Symbols:FILL@0..1&display=block"
+    rel="stylesheet" media="print" id="async-google-font-2" />
+  <script nonce="btlI6tnb&#x2B;pgwSSCJzXruoA==" type="text/javascript">
+    const styleSheetIds = ["async-google-font-1", "async-google-font-2"];
+    styleSheetIds.forEach(function (id) {
+      document.getElementById(id).addEventListener("load", function() {
+        this.media = "all";
+      });
+    });
+  </script>
+
+
+    <link rel="canonical" href="https://www.kaggle.com/datasets/azminetoushikwasi/ott-video-streaming-platforms-revenue-and-users" />
+    <link rel="stylesheet" type="text/css" href="/static/assets/app.css?v=2d4e7ec4eb689d926191" />
+
+  
+    
+ 
+      <script nonce="btlI6tnb&#x2B;pgwSSCJzXruoA==">
+        try{(function(a,s,y,n,c,h,i,d,e){d=s.createElement("style");
+        d.appendChild(s.createTextNode(""));s.head.appendChild(d);d=d.sheet;
+        y=y.map(x => d.insertRule(x + "{ opacity: 0 !important }"));
+        h.start=1*new Date;h.end=i=function(){y.forEach(x => x<d.cssRules.length ? d.deleteRule(x) : {})};
+        (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+        })(window,document,['.site-header-react__nav'],'dataLayer',2000,{'GTM-52LNT9S':true});}catch(ex){}
+    </script>
+    <script nonce="btlI6tnb&#x2B;pgwSSCJzXruoA==">
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-T7QHS60L4Q', {
+            'optimize_id': 'GTM-52LNT9S',
+            'displayFeaturesTask': null,
+            'send_page_view': false,
+            'content_group1': 'Datasets'
+        });
+    </script>
+    <script nonce="btlI6tnb&#x2B;pgwSSCJzXruoA==" async src="https://www.googletagmanager.com/gtag/js?id=G-T7QHS60L4Q"></script>
+
+  
+    
+    <meta property="og:url" content="https://www.kaggle.com/datasets/azminetoushikwasi/ott-video-streaming-platforms-revenue-and-users" />
+    <meta property="og:title" content="OTT, Video Streaming Platforms - Revenue and Users" />
+    <meta property="og:description" content="OTT &#x2B; Video Streaming Platforms - Revenue and User Stats 2011-21" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://storage.googleapis.com/kaggle-datasets-images/2309990/3887725/f7744cb3d0d06dc804005c7da6995edc/dataset-card.jpeg?t=2022-07-01-08-32-59" />
+    <meta property="fb:app_id" content="2665027677054710" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@kaggledatasets" />
+
+
+  <meta name="twitter:site" content="@Kaggle" /> 
+  
+    
+            <script nonce="btlI6tnb+pgwSSCJzXruoA==" type="application/ld+json">{"@context":"http://schema.org/","@type":"Dataset","name":"OTT, Video Streaming Platforms - Revenue and Users","description":"# Context\nThis dataset contains OTT + Video Streaming Platforms - Revenue and User Stats 2011-21\n\n# Project / Tasks\n- Time Series Analysis.\n- Market Analysis.\n- Analysis and predict future.\n- Find patterns.\n\n![](https://empireweekly.com/wp-content/uploads/2022/01/fortuneindia_2020-11_9cc704de-6f70-4a3f-b3e2-92991dfb24e3_netflix.jpeg)\n\n# About OTT, Video Streaming Platforms\nOTT stands for “over-the-top,” which refers to any TV or video content that's streamed over the internet. This includes any web or app-based streaming service, like Netflix, YouTube, Disney Plus and many more.\nThere's a wide range of OTT platforms, including Netflix, Disney+, Hulu, Amazon Prime Video, Hulu, Peacock, CuriosityStream, Pluto TV, and so many more. Unlike OTT platforms, YouTube is a social video platform that was originally designed to allow everyday consumers to share moments caught on video. YouTube has attempted to enter the OTT market a number of times with limited success, since the market clearly sees YouTube as a place for free content.\n\n# Content\n|    | File                         | File Type |\n| -- | ---------------------------- | --------- |\n| 1  | LibrarySize.csv              | CSV file  |\n| 2  | MinuteSharing.csv            | CSV file  |\n| 3  | AppUsage.csv                 | CSV file  |\n| 4  | NumSubscribers.csv           | CSV file  |\n| 5  | Revenue.csv                  | CSV file  |\n| 6  | Revenue.csv                  | CSV file  |\n| 7  | AdRevenue.csv                | CSV file  |\n| 8  | LiveTVSubscribers.csv        | CSV file  |\n| 9  | NumSubscribers.csv           | CSV file  |\n| 10 | Profit.csv                   | CSV file  |\n| 11 | Revenue.csv                  | CSV file  |\n| 12 | SubscriptionRevenue.csv      | CSV file  |\n| 13 | Valuation.csv                | CSV file  |\n| 14 | ContentSpend.csv             | CSV file  |\n| 15 | NumSubscribers.csv           | CSV file  |\n| 16 | NumSubscribersByRegion.csv   | CSV file  |\n| 17 | Profit.csv                   | CSV file  |\n| 18 | Revenue.csv                  | CSV file  |\n| 19 | RevenueByRegion.csv          | CSV file  |\n| 20 | Revenue.csv                  | CSV file  |\n| 21 | Users.csv                    | CSV file  |\n| 22 | AdRevenue.csv                | CSV file  |\n| 23 | ConcurrentViewers.csv        | CSV file  |\n| 24 | HoursWatched.csv             | CSV file  |\n| 25 | MostViewedGamesOnTwitch.csv  | CSV file  |\n| 26 | Revenue.csv                  | CSV file  |\n| 27 | TwitchAgeDemographics.csv    | CSV file  |\n| 28 | TwitchGenderDemographics.csv | CSV file  |\n| 29 | TwitchStreamers.csv          | CSV file  |\n| 30 | AppUsage.csv                 | CSV file  |\n| 31 | NumSubscribers.csv           | CSV file  |\n| 32 | Revenue.csv                  | CSV file  |\n| 33 | AppUsage.csv                 | CSV file  |\n| 34 | NumSubscribers.csv           | CSV file  |\n| 35 | Revenue.csv                  | CSV file  |\n| 36 | TopPlatforms.csv             | CSV file  |\n| 37 | PremiumSubscribers.csv       | CSV file  |\n| 38 | Revenue.csv                  | CSV file  |\n| 39 | Users.csv                    | CSV file  |\n\n\n\n# Download\n- kaggle API Command\n`!kaggle datasets download -d azminetoushikwasi/ott-video-streaming-platforms-revenue-and-users`\n\n## Disclaimer\n- The data collected are all publicly available and it's intended for educational purposes only.\n\n## Acknowledgement\n- Cover image taken from internet.\n\n## Appreciate, Support, Share","url":"https://www.kaggle.com/azminetoushikwasi/ott-video-streaming-platforms-revenue-and-users","version":7,"keywords":["subject, arts and entertainment","subject, science and technology, computer science","subject, people and society, business, finance","subject, people and society, business, finance, investing","subject, people and society","subject, people and society, business, marketing"],"license":{"@type":"CreativeWork","name":"CC0: Public Domain","url":"https://creativecommons.org/publicdomain/zero/1.0/"},"identifier":["2309990"],"includedInDataCatalog":{"@type":"DataCatalog","name":"Kaggle","url":"https://www.kaggle.com"},"creator":{"@type":"Person","name":"Azmine Toushik Wasi","url":"https://www.kaggle.com/azminetoushikwasi","image":"https://storage.googleapis.com/kaggle-avatars/thumbnails/7168168-kg.jpg?t=2024-10-21-14-45-31"},"distribution":[{"@type":"DataDownload","requiresSubscription":true,"encodingFormat":"zip","fileFormat":"zip","contentUrl":"https://www.kaggle.com/datasets/azminetoushikwasi/ott-video-streaming-platforms-revenue-and-users/download?datasetVersionNumber=7","contentSize":"10976 bytes"}],"commentCount":1,"dateModified":"2022-09-22T04:16:46.39Z","discussionUrl":"https://www.kaggle.com/azminetoushikwasi/ott-video-streaming-platforms-revenue-and-users/discussion","alternateName":"OTT + Video Streaming Platforms - Revenue and User Stats 2011-21","isAccessibleForFree":true,"thumbnailUrl":"https://storage.googleapis.com/kaggle-datasets-images/2309990/3887725/f7744cb3d0d06dc804005c7da6995edc/dataset-card.jpeg?t=2022-07-01-08-32-59","interactionStatistic":[{"@type":"InteractionCounter","interactionType":"http://schema.org/CommentAction","userInteractionCount":1},{"@type":"InteractionCounter","interactionType":"http://schema.org/DownloadAction","userInteractionCount":4822},{"@type":"InteractionCounter","interactionType":"http://schema.org/ViewAction","userInteractionCount":26183},{"@type":"InteractionCounter","interactionType":"http://schema.org/LikeAction","userInteractionCount":62}]}</script>
+        
+
+  
+    
+
+  
+    
+
+
+    <script nonce="btlI6tnb&#x2B;pgwSSCJzXruoA==">window['useKaggleAnalytics'] = true;</script>
+
+  <script id="gapi-target" nonce="btlI6tnb&#x2B;pgwSSCJzXruoA==" src="https://apis.google.com/js/api.js" defer
+    async></script>
+  <script nonce="btlI6tnb+pgwSSCJzXruoA==" src="/static/assets/runtime.js?v=d531db86bd137b2e524c"></script>
+  <script nonce="btlI6tnb+pgwSSCJzXruoA==" src="/static/assets/vendor.js?v=93540707f793d66d045a"></script>
+  <script nonce="btlI6tnb+pgwSSCJzXruoA==" src="/static/assets/app.js?v=dc01496e9f8a67dea986"></script>
+    <script nonce="btlI6tnb&#x2B;pgwSSCJzXruoA==" type="text/javascript">
+      window.kaggleStackdriverConfig = {
+        key: 'AIzaSyA4eNqUdRRskJsCZWVz-qL655Xa5JEMreE',
+        projectId: 'kaggle-161607',
+        service: 'web-fe',
+        version: 'ci',
+        userId: '0'
+      }
+    </script>
+</head>
+<body>
+  <div id="root">
+    
+
+
+
+
+
+
+
+
+<script nonce="btlI6tnb&#x2B;pgwSSCJzXruoA==" type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+    jax: ['input/TeX', 'output/SVG'],
+    "HTML-CSS": {
+    preferredFont: "TeX",
+    availableFonts: ["STIX", "TeX"],
+    linebreaks: {
+    automatic: true
+    },
+    EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50)
+    },
+    tex2jax: {
+    inlineMath: [["\\(", "\\)"], ["\\\\(", "\\\\)"]],
+    displayMath: [["$$", "$$"], ["\\[", "\\]"]],
+    processEscapes: true,
+    ignoreClass: "tex2jax_ignore|dno"
+    },
+    TeX: {
+    noUndefined: {
+    attributes: {
+    mathcolor: "red",
+    mathbackground: "#FFEEEE",
+    mathsize: "90%"
+    }
+    }
+    },
+    Macros: {
+    href: "{}"
+    },
+    skipStartupTypeset: true,
+    messageStyle: "none",
+    extensions: ["Safe.js"],
+    });
+</script>
+<script type="text/javascript" nonce="btlI6tnb&#x2B;pgwSSCJzXruoA==">
+  window.addEventListener("DOMContentLoaded", () => {
+    const head = document.getElementsByTagName("head")[0];
+    const lib = document.createElement("script");
+    lib.type = "text/javascript";
+    // Always use the production asset in local dev, which is served from GCS. We tried to proxy and / or serve this
+    // in a better way in localhost, but it didn't work out. See b/328073416#comment8 for details.
+    const forceProdHost = window.location.hostname === "localhost";
+    lib.src = `${forceProdHost ? "https://www.kaggle.com" : ""}/static/mathjax/2.7.9/MathJax.js?config=TeX-AMS_SVG`;
+    head.appendChild(lib);
+  });
+</script>
+
+
+
+
+
+
+
+
+
+  </div>
+</body>
+</html>

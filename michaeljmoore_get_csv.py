@@ -27,7 +27,7 @@ from utils_logger import logger
 # Declare Global Variables
 #####################################
 
-FETCHED_DATA_DIR = "example_data"
+FETCHED_DATA_DIR = "data"
 
 #####################################
 # Define Functions
@@ -79,7 +79,7 @@ def write_csv_file(folder_name: str, filename: str, string_data: str) -> None:
     try:
         logger.info(f"Writing CSV data to {file_path}...")
         file_path.parent.mkdir(parents=True, exist_ok=True)
-        with file_path.open('w') as file:
+        with file_path.open('w', encoding='utf-8') as file:  # Specify encoding
             file.write(string_data)
         logger.info(f"SUCCESS: CSV data written to {file_path}")
     except IOError as io_err:
@@ -93,9 +93,9 @@ def main():
     """
     Main function to demonstrate fetching CSV data.
     """
-    csv_url = 'https://raw.githubusercontent.com/MainakRepositor/Datasets/master/World%20Happiness%20Data/2020.csv'
+    csv_url = 'https://github.com/KickItLikeShika/Scraping-Disney-Data/blob/5586716f5ac2e634d1bdbdc70ea6da806590a19b/DisneyMovies_cleaned_data.csv?raw=true'  # Example direct link
     logger.info("Starting CSV fetch demonstration...")
-    fetch_csv_file(FETCHED_DATA_DIR, "2020_happiness.csv", csv_url)
+    fetch_csv_file(FETCHED_DATA_DIR, "DisneyMovies_cleaned_data.csv", csv_url)
 
 #####################################
 # Conditional Execution
